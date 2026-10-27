@@ -1,14 +1,16 @@
 # MovieGuide Frontend
 
 Frontend для перегляду каталогу фільмів MovieGuide.
-
 ## Як запустити проєкт
 
 1. Запустіть backend MovieGuide.
 2. Переконайтеся, що API доступне за адресою:
    http://127.0.0.1:8000
-3. Відкрийте цей frontend.
+3. Відкрийте цей frontend у VS Code.
 4. Запустіть index.html через Live Server.
+
+Frontend: http://127.0.0.1:5500
+Backend: http://127.0.0.1:8000
 
 ## Можливості
 
