@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieGuide — каталог фільмів</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>MovieGuide</h1>
+        <p>Відкривай нові історії</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Каталог фільмів</h2>
+
+            <form id="search-form">
+                <label for="search">Назва фільму</label>
+                <input id="search" type="search" placeholder="Наприклад, Summer">
+                <button type="submit">Знайти</button>
+            </form>
+
+            <p id="status" role="status">Завантаження каталогу...</p>
+            <div id="movies-list" class="movies-list"></div>
+        </section>
+    </main>
+</body>
+</html>
