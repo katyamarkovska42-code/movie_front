@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MovieGrid</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <h1>MovieGrid</h1>
+            <p>Каталог фільмів</p>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="catalog">
+            <h2>Усі фільми</h2>
+
+            <form id="search-form" class="filters">
+
+                <input
+                    type="text"
+                    id="search"
+                    placeholder="Пошук фільму..."
+                >
+
+                <input
+                    type="number"
+                    id="year"
+                    placeholder="Рік"
+                >
+
+                <select id="sort">
+                    <option value="">Без сортування</option>
+                    <option value="title">За назвою</option>
+                    <option value="-year">Спочатку новіші</option>
+                    <option value="year">Спочатку старіші</option>
+                    <option value="-rating">За рейтингом</option>
+                </select>
+
+                <button type="submit">Знайти</button>
+
+                <button type="reset" id="reset-button">
+                    Очистити
+                </button>
+
+            </form>
+
+            <p id="status"></p>
+
+            <div id="movies-list" class="movies-grid"></div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>MovieGrid © 2026</p>
+    </footer>
+
+</body>
+</html>
