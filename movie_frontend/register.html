@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Реєстрація — CineScope</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="auth.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>CineScope</h1>
+        <nav>
+            <a href="index.html">Головна</a>
+            <a href="login.html">Вхід</a>
+        </nav>
+    </header>
+
+    <main class="auth-container">
+        <h2>Створення акаунта</h2>
+
+        <form id="register-form">
+            <label for="username">Ім'я користувача *</label>
+            <input type="text" id="username" maxlength="150" required>
+
+            <label for="first-name">Ім'я</label>
+            <input type="text" id="first-name" maxlength="150">
+
+            <label for="last-name">Прізвище</label>
+            <input type="text" id="last-name" maxlength="150">
+
+            <label for="email">Email *</label>
+            <input type="email" id="email" maxlength="254" required>
+
+            <label for="password">Пароль *</label>
+            <input type="password" id="password" minlength="8" required>
+
+            <label for="password-confirm">Підтвердження пароля *</label>
+            <input type="password" id="password-confirm" required>
+
+            <button type="submit">Зареєструватися</button>
+        </form>
+
+        <p id="auth-message"></p>
+
+        <p>
+            Уже маєте акаунт?
+            <a href="login.html">Увійти</a>
+        </p>
+    </main>
+
+</body>
+</html>
